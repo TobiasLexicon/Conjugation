@@ -1,4 +1,4 @@
-﻿using Conjugation;
+﻿using static Conjugation.Utilities;
 
 // futur
 // conditionnal
@@ -20,14 +20,11 @@
 // vend-u
 
 
-
-
-
-string tenseChosen = Utilities.GetVerbTense();
-string enteredWord = Utilities.GetVerb();
-string verbKind = Utilities.GetVerbKind(enteredWord);
-string finalResult = Utilities.GetFinalResult(tenseChosen, enteredWord);
-Utilities.OutputFinalResult(finalResult, verbKind);
+string tenseChosen = GetVerbTense();
+string enteredWord = GetVerb();
+string verbKind = GetVerbKind(enteredWord);
+string finalResult = GetFinalResult(tenseChosen, enteredWord);
+OutputFinalResult(finalResult, verbKind);
 
 
 

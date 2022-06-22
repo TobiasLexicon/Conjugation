@@ -50,45 +50,45 @@ namespace Conjugation
 			return tenseChosen;
 		}
 
-		public static string GetVerb()
+		public static string? GetVerb()
         {
 			Console.WriteLine("Please enter a regular verb in french:");
-			return Console.ReadLine();
+			return Console.ReadLine().ToLower();
 		}
 
 		public static string GetFinalResult(string tenseChosen, string enteredWord)
         {
-			string verbTense = tenseChosen switch
+			var (verbTense, lettersToCut) = tenseChosen switch
 			{
-				"1" => "futur",
-				"2" => "conditionnel",
-				"3" => "passé composé",
+				"1" => ("futur", 2),
+				"2" => ("conditionnel", 1),
+				"3" => ("passé composé", 2),
+				_ => ("", 0),
 			};
-
-			int lettersToCut = tenseChosen switch
+			string verbKind = GetVerbKind(enteredWord);
+			string suffix = (tenseChosen, verbKind) switch
 			{
-				"1" => 2,
-				"2" => 1,
-				"3" => 2,
+				("1", "the first") => "erai",
+				("1", "the second") => "rai",
+				("1", "the third") => "rai",
+				("2", "the first") => "erais",
+				("2", "the second") => "rais",
+				("2", "the third") => "rais",
+				("3", "the first") => "é",
+				("3", "the second") => "",
+				("3", "the third") => "u",
+				(_, _) => ""
 			};
-
-			string verbBase = Utilities.GetFoundation(enteredWord, lettersToCut);
-
-
-			string finalOutput = $"The right verb form for {verbTense} of {enteredWord} is {verbBase}";
+			string verbBase = GetBase(enteredWord, lettersToCut);
+			string pronoun = tenseChosen == "3" ? "j'ai" : "je";
+			string finalOutput = $"The right verb form for {verbTense} of {enteredWord} is {pronoun} {verbBase}{suffix}";
 			return finalOutput;
         }
 
-		public static string GetFoundation(string verb, int lettersToCut)
+		public static string GetBase(string verb, int lettersToCut)
         {
 			int fromEnd = verb.Length - lettersToCut;
 			return verb.Remove(fromEnd);
-        }
-
-		public static string GetFirstPersonFormat()
-        {
-			string firstPersonForm = "";
-			return firstPersonForm;
         }
 
 		public static void OutputFinalResult(string finalOutput, string verbKind)
