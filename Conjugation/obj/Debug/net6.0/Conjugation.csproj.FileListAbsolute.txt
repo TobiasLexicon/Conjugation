@@ -1,0 +1,15 @@
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/bin/Debug/net6.0/Conjugation
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/bin/Debug/net6.0/Conjugation.deps.json
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/bin/Debug/net6.0/Conjugation.runtimeconfig.json
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/bin/Debug/net6.0/Conjugation.dll
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/bin/Debug/net6.0/Conjugation.pdb
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/Conjugation.csproj.AssemblyReference.cache
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/Conjugation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/Conjugation.AssemblyInfoInputs.cache
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/Conjugation.AssemblyInfo.cs
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/Conjugation.csproj.CoreCompileInputs.cache
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/Conjugation.dll
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/refint/Conjugation.dll
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/Conjugation.pdb
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/Conjugation.genruntimeconfig.cache
+/Users/tobiasengberg/Projects/Conjugation/Conjugation/obj/Debug/net6.0/ref/Conjugation.dll
